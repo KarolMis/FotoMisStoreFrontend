@@ -17,10 +17,8 @@
 
 <body>
 
-<div class="container">
-
     <!-- Static navbar -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -29,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="#">FotoMiś Store</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -58,16 +56,98 @@
         </div><!--/.container-fluid -->
     </nav>
 
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <h1>Test !!! </h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>
-            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
-    </div>
+    <!-- container -->
+    <div class="container">
+        <div class="row">
 
-</div> <!-- /container -->
+            <!-- carousel -->
+            <div class="col-xs-8">
+                <div id="carousel-example-generic" class="carousel slide"
+                     data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0"
+                            class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t31.0-8/16423073_262720507491900_7951734446989244758_o.jpg?_nc_cat=0&oh=9bd7f30ca43622776730946d425e1c64&oe=5B298C5A"
+                                 alt="..." />
+                            <div class="carousel-caption">
+                                <h4>Pudełko</h4>
+                                <p>Dzieło sztuki stoi wyżej niż dzieło natury.<br>
+                                                             Georg W. F. Hegel</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t31.0-8/15994689_249927562104528_2115837076323809418_o.jpg?_nc_cat=0&oh=0e96f01fdcb06a403a7074782b469bde&oe=5B48730B"
+                                 alt="..." />
+                            <div class="carousel-caption">
+                                <h4>Pudełko</h4>
+                                <p>Pierwszym obowiązkiem artysty jest opanowanie rzemiosła. <br>
+                                                                          Rurdyart Kipling</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t31.0-8/15123444_223769198053698_3885127229901107658_o.jpg?oh=0ae9a0255aec2c905616d8a604425d73&oe=5B35DEBC"
+                                 alt="..." />
+                            <div class="carousel-caption">
+                                <h4>Pudełko</h4>
+                                <p>Piękno raduje nie tego, kto je posiada, <br> ale tego, kto je może kochać i wielbić.<br>
+                                                                                                    Hermann Hesse</p>
+                            </div>
+                        </div>
+                        ...
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic"
+                       role="button" data-slide="prev"> <span
+                            class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a> <a class="right carousel-control" href="#carousel-example-generic"
+                            role="button" data-slide="next"> <span
+                        class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-xs-4">
+                <img src="/image/logo.jpg" class="img-responsive">
+            </div>
+
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="/image/fotomis.jpg" class="img-responsive"/>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="/image/lokalizacja.png" class="img-responsive"/>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- container -->
+
 
 
 <!-- Bootstrap core JavaScript
