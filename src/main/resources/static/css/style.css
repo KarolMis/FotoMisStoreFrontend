@@ -21,3 +21,16 @@ hr{
 .box {
   border: 5px solid lightpink;
 }
+
+.home-headline {
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    margin: auto;
+    color: lightpink;
+    text-align: center;
+}
+
+.home-headline span {
+    background-color: #0f0f0f;
+    padding: 5px 20px;
+}
