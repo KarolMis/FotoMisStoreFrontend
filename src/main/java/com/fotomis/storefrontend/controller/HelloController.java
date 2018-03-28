@@ -64,7 +64,7 @@ public class HelloController {
     @RequestMapping(value = "/newUser", method = RequestMethod.POST)
     public String newUserPost(HttpServletRequest request,
                               @ModelAttribute("email") String userEmail,
-                              @ModelAttribute() String username, Model model ) throws  Exception {
+                              @ModelAttribute("username") String username, Model model ) throws  Exception {
         model.addAttribute("classActiveNewAccount", true);
         model.addAttribute("email", userEmail);
         model.addAttribute("username", username);
@@ -132,6 +132,8 @@ public class HelloController {
                 userDetails.getAuthorities());
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
+
+        model.addAttribute("user", user);
 
         model.addAttribute("classActiveEdit", true);
         return "myProfile";

@@ -49,7 +49,7 @@ public class UserServiceImpl implements UserService {
         return userRepository.findByEmail(email);
     }
 
-    public User createUser(User user, Set<UserRole> userRoles) throws Exception {
+    public User createUser(User user, Set<UserRole> userRoles) {
         User localUser = userRepository.findByUsername(user.getUsername());
 
         if(localUser != null) {
