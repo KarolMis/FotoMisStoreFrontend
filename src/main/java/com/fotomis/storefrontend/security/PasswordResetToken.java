@@ -69,10 +69,10 @@ public class PasswordResetToken {
         this.expiryDate = expiryDate;
     }
 
-    private Date calculateExpiryDate(final int expirtyTimeInMinutes) {
+    private Date calculateExpiryDate(final int expiryTimeInMinutes) {
         final Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(new Date().getTime());
-        calendar.add(Calendar.MINUTE, expirtyTimeInMinutes);
+        calendar.add(Calendar.MINUTE, expiryTimeInMinutes);
         return new Date(calendar.getTime().getTime());
 
     }
